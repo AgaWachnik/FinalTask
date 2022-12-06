@@ -3,6 +3,7 @@ package mystoreobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class HummingBirdSweater {
     private final WebDriver driver;
@@ -10,11 +11,9 @@ public class HummingBirdSweater {
     public HummingBirdSweater(WebDriver driver) {
         this.driver = driver;}
 
-    public AddProduct chooseProduct
-
-    {
-        WebElement sizeDropdown = driver.findElement(By.cssSelector("[data-toggle=\"dropdown\"]"));
-        WebElement sizeM = driver.findElement(By.cssSelector("[data-id-hotel=\"1\"]"));
+    public AddProduct chooseProduct(){
+        Select sizeDropdown = new Select(driver.findElement(By.id("group_1")));
+        sizeDropdown.selectByVisibleText("M");
         WebElement addToCartButton = driver.findElement(By.id("search_room_submit"));
         return new AddProduct(driver);
     }

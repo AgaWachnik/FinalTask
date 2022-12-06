@@ -27,7 +27,7 @@ public class HomePage {
     }
 
     public HummingBirdSweater chooseSweater(){
-        WebElement photoSweater = driver.findElement(By.className("product-miniature js-product-miniature"));
+        WebElement photoSweater = driver.findElement(By.cssSelector("#content > section > div > div:nth-child(2) > article > div > div.product-description > h3 > a"));
         photoSweater.click();
         return new HummingBirdSweater(driver);
     }
