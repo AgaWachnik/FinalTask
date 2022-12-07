@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac5cbba-07c0-46bf-a0ca-ad4973c33361" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/OrderConfirmation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/OrderDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreateNewAddressTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mystoreobjects/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/AccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mystoreobjects/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/AddProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mystoreobjects/AddressAdded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/AddressAdded.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mystoreobjects/HummingBirdSweater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/HummingBirdSweater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mystoreobjects/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/OrderDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateNewAddressSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateNewAddressSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FirstTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,12 +47,31 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.FirstTask">
+  <component name="RunManager" selected="JUnit.CreateNewAddressTest">
+    <configuration name="CreateNewAddressTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTask" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateNewAddressTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FirstTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTask" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTask" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTask.orderSweater" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTask" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTask" />
+      <option name="METHOD_NAME" value="orderSweater" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -65,8 +88,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTask" />
+        <item itemvalue="JUnit.CreateNewAddressTest" />
         <item itemvalue="JUnit.FirstTask.registerUser" />
+        <item itemvalue="JUnit.FirstTask" />
+        <item itemvalue="JUnit.FirstTask.orderSweater" />
       </list>
     </recent_temporary>
   </component>
@@ -91,16 +116,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mystoreobjects/AccountPage.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

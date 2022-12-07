@@ -16,7 +16,8 @@ public class HummingBirdSweater {
         sizeDropdown.selectByVisibleText("M");
         WebElement productQuantity = driver.findElement(By.id("quantity_wanted"));
         productQuantity.sendKeys("5");
-        WebElement addToCartButton = driver.findElement(By.id("search_room_submit"));
+        WebElement addToCartButton = driver.findElement(By.cssSelector("[data-button-action=\"add-to-cart\"]"));
+        addToCartButton.click();
         return new AddProduct(driver);
     }
 }

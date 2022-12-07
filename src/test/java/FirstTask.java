@@ -1,12 +1,21 @@
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import mystoreobjects.*;
+import org.apache.commons.io.FileUtils;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Date;
 
 public class FirstTask {
 
@@ -33,7 +42,7 @@ public class FirstTask {
         accountPage.clickAddAddress();
     }
 @Test
-void orderSweater(){
+void orderSweater() throws IOException {
     HomePage homePage = new HomePage(driver);
     homePage.openPage();
     AuthenticationPage authenticationPage = homePage.clickSignIn();
@@ -46,8 +55,11 @@ void orderSweater(){
     OrderConfirmation orderConfirmation = orderDetails.orderSteps();
 
     //Screenshot
+    Date currentDate = new Date();
+    String screenshotFileName = currentDate.toString().replace(" ", "-").replace(":", "-");
+    File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+    FileUtils.copyFile(screenshot, new File(".//screenshots/" + screenshotFileName + ".png"));
 
-    
 }
 
 

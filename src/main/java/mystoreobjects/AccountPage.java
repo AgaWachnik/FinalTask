@@ -10,14 +10,14 @@ public class AccountPage {
     public AccountPage(WebDriver driver) {
         this.driver = driver;}
 
-    public CreateNewAddress clickAddAddress(){
-        WebElement addFirstAddress = driver.findElement(By.id("address-link"));
+    public AddressAdded clickAddAddress(){
+        WebElement addFirstAddress = driver.findElement(By.id("addresses-link"));
         addFirstAddress.click();
-        return new CreateNewAddress(driver);
+        return new AddressAdded(driver);
     }
 
     public void clickLogo(){
-        WebElement logoMyStore = driver.findElement(By.className("logo img-fluid"));
+        WebElement logoMyStore = driver.findElement(By.id("_desktop_logo"));
         logoMyStore.click();
         new HomePage(driver);
     }

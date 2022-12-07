@@ -11,7 +11,7 @@ public class AddProduct {
         this.driver = driver;}
 
     public ShoppingCart clickCheckout(){
-        WebElement checkoutButton = driver.findElement(By.cssSelector("blockcart-modal > div > div > div.modal-body > div > div.col-md-7 > div > div > a"));
+        WebElement checkoutButton = driver.findElement(By.cssSelector(".cart-content-btn .btn-primary"));
         checkoutButton.click();
         return new ShoppingCart(driver);
     }
