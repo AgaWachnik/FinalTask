@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac5cbba-07c0-46bf-a0ca-ad4973c33361" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/AddProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/OrderConfirmation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/OrderDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/ShoppingCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mystoreobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mystoreobjects/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/AddProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mystoreobjects/HummingBirdSweater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mystoreobjects/HummingBirdSweater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

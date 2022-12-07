@@ -1,9 +1,7 @@
-import mystoreobjects.AccountPage;
-import mystoreobjects.AuthenticationPage;
-import mystoreobjects.HomePage;
-import mystoreobjects.HummingBirdSweater;
+import mystoreobjects.*;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -42,6 +40,15 @@ void orderSweater(){
     AccountPage accountPage = authenticationPage.loginUser(email, password);
     accountPage.clickLogo();
     HummingBirdSweater hummingBirdSweater = homePage.chooseSweater();
+    AddProduct addProduct = hummingBirdSweater.chooseProduct();
+    ShoppingCart shoppingCart = addProduct.clickCheckout();
+    OrderDetails orderDetails = shoppingCart.proceedToCheckout();
+    OrderConfirmation orderConfirmation = orderDetails.orderSteps();
+
+    //Screenshot
+
+    
 }
+
 
 }
